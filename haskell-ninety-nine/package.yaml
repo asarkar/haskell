@@ -1,0 +1,18 @@
+name:                haskell-ninety-nine
+version:             0.1.0.0
+
+ghc-options: -Wall
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  haskell-ninety-nine-test:
+    main:                Spec.hs
+    source-dirs:         test
+    dependencies:
+    - haskell-ninety-nine
+    - hspec

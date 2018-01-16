@@ -1,0 +1,37 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 92ea61b73249152da943d505588d12d2448ce2d0a51cf2c234575d7097cd730d
+
+name:           haskell-ninety-nine
+version:        0.1.0.0
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base >=4.7 && <5
+  exposed-modules:
+      List
+  other-modules:
+      Paths_haskell_ninety_nine
+  default-language: Haskell2010
+
+test-suite haskell-ninety-nine-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -Wall
+  build-depends:
+      base >=4.7 && <5
+    , haskell-ninety-nine
+    , hspec
+  other-modules:
+      ListSpec
+      Paths_haskell_ninety_nine
+  default-language: Haskell2010
